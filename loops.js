@@ -12,3 +12,15 @@ function whileLoop(num){
   }
   return 'done'
 }
+
+function doWhileLoop(array){
+  let i = 0
+  function incrementVariable() {
+  i = i + 1;
+  }
+  do {
+    array.shift(array[i])
+	   incrementVariable()
+  } while(array.length > 0) 
+  return array
+}
